@@ -1,0 +1,212 @@
+@media (max-width:920px) {
+    body{
+        overflow-x: hidden;
+    }
+    .first-nav{
+        width: 100%;
+        height: 10vh;
+        background-color:  rgb(128, 139,150);
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .first-nav .logo{
+        width: 20%;
+        position: relative;
+        left: 15%;
+        background-color: transparent;
+    }
+    .first-nav .logo h1{
+        width: 100%;
+        font-size: x-large;
+        color: rgb(202, 200, 200);
+    }
+    .first-nav .image{
+        width: 8%;
+        height: 80%;
+        
+    }
+    .myicon-1{
+        width: 10%;
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        top: 15px;
+        left: 5%;
+        font-size: xx-large;
+    }
+    #click:checked ~ .dash{
+        left: 0%;
+    }
+    .dash{
+        width: 40%;
+        height: 90vh;
+        background-color:  rgb(128, 139,150);
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        left: -100%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px 5px gray;
+    
+    }
+    .container{
+        width: 100%;
+        height: 50vh;
+        background-color: transparent;
+        position: relative;
+        /* top: 13vh; */
+        left: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-grow: 1; 
+        background-color: transparent;   
+    }
+    .container .card{
+        width: 40%;
+        height: 40%;
+        background-color: white;
+        border-radius: 20px;
+        /* border: 2px solid black; */
+        box-shadow: 1px 1px 1px 1px  gray;
+    }
+    /****************************section css end*****************************************************  */
+    .trend{
+        width: 90%;
+        height: 60vh;
+        background-color: blue;
+        position: relative;
+        left: 5%;
+        top: 15vh;
+        display: flex;
+        align-items: center;
+    }
+    /****************************section css end*****************************************************  */
+
+    .billing{
+        width: 90%;
+        height: 120vh;
+        position: relative;
+        top: 15vh;
+        left: 5%;
+        background-color: rgba(233, 233, 233, 0.352);
+    }
+
+    .billing .card-1{
+        width: 100%;
+        height: 40%;
+        display: block;
+        position: relative;
+        gap: 1%;
+        align-items: center;
+        background-color: transparent;
+    }
+    .billing .card-1 .card{
+        width: 80%;
+        height: 90%;
+        position: relative;
+        left: 10%;
+    }
+    .billing .card-1 .boxx{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 15%;
+        left: 11%;
+        justify-content: space-evenly;
+    }
+    .billing .card-1 .boxx .box-1{
+        width: 40%;
+        height: 90%;
+        background-color: white;
+        border-radius: 7%;
+        box-shadow: 2px 5px 5px 2px gray;
+    }
+    .billing .pay{
+        width: 100%;
+        height: 20%;
+        position: relative;
+        top: 35%;
+        box-shadow: 1px 8px 8px 5px gray;
+    }
+
+        /****************************section css end*****************************************************  */
+
+    /****************************section css table start*****************************************************  */
+
+    .table{
+        width: 90%;
+        height: 70vh;
+        position: relative;
+        top: 20vh;
+        left: 5%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 5px gray;
+        /* border: 1px solid gray; */
+    }
+    .table .slid{
+        width: 120%;
+        height: 100%;
+    }
+    /****************************section css table end*****************************************************  */
+    section{
+        width: 90%;
+        height: 100vh;
+        background-color: transparent;
+        position: relative;
+        left: 5%;
+        top: 12vh;
+        background-color: rgba(255, 247, 247, 0.51);
+    }
+    section .container .cards{
+        width: 100%;
+        height: 20%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    section .container .cards .card{
+        width: 24%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px 2px gray;
+        background-color: #D35400;
+    }
+    section .container .cards .card .box h1, h3{
+        font-size: large;
+    }
+    section .container .cards .card .icon-case i{
+        font-size: x-large;
+    }
+    section .content-2{
+        width: 100%;
+        height: 80%;
+        display: block;
+        position: relative;
+        top: 10%;
+    }
+
+    section .content-2 .recent-payments{
+        width: 100%;
+        height: 80%;
+        position: relative;
+        background-color: transparent;
+        box-shadow: 2px 5px 4px 4px gray;
+        background-color: rgba(237, 187, 153, .4);
+    }
+    
+}

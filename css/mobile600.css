@@ -1,0 +1,67 @@
+@media (max-width:600px) {
+    .first-nav{
+        width: 100%;
+        height: 10vh;
+        background-color:  rgb(128, 139,150);
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .first-nav .logo{
+        width: 30%;
+        position: relative;
+        left: 20%;
+    }
+
+    section{
+        width: 90%;
+        height: 150vh;
+        background-color: transparent;
+        position: relative;
+        left: 5%;
+        top: 12vh;
+        background-color: rgba(255, 247, 247, 0.51);
+    }
+    section .container .cards{
+        width: 100%;
+        height: 20%;
+        background-color: transparent;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    section .container .cards .card{
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px 2px gray;
+        background-color: #D35400;
+    }
+    section .content-2 .recent-payments{
+        width: 60%;
+        height: 80%;
+        position: relative;
+        background-color: transparent;
+        box-shadow: 2px 5px 4px 4px gray;
+        background-color: rgba(237, 187, 153, .4);
+    }
+    section{
+        width: 10%;
+        height: 200vh;
+        background-color: transparent;
+        position: relative;
+        left: 23%;
+        top: 12vh;
+        /* background-color: rgba(255, 247, 247, 0.51); */
+    }
+    
+}

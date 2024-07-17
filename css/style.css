@@ -1,0 +1,721 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body { background:rgb(90, 90, 133); }
+
+.im{
+    position: fixed;
+    z-index: 1;
+}
+/* .image_1{
+    background-image: linear-gradient(rgba(150, 524, 241, .7));
+} */
+/* .image_1{
+    background-image: url('../asstes/image/8738924.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100rem;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    text-align: center;
+} */
+.first-nav{
+    width: 100%;
+    height: 10vh;
+    background-color:  rgba(128, 139,150, .4);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-nav .logo{
+    width: 30%;
+    position: relative;
+    left: 10%;
+}
+.first-nav .logo .had{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.first-nav .logo .had img{
+    width: 20%;
+}
+.first-nav .logo .had h1{
+    width: 100%;
+    font-size: 30px;
+    color: rgb(255, 241, 241);
+}
+
+
+.first-nav .search{
+    width: 30%;
+    height: 50%;
+    
+}
+.first-nav .search .search-1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    
+}
+.first-nav .search .search-1 input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+/* header .logo .search .search-1 input[text]{
+    display: none;
+} */
+.first-nav .search .search-1 i{
+    width: 10%;
+    position: relative;
+    left: 5%;
+    font-size: large;
+    font-weight: 800;
+    cursor: pointer;
+}
+.first-nav .image{
+    width: 4%;
+    height: 80%;
+    background-color: transparent;
+    position: relative;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    
+    
+}
+.first-nav .image a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    color: black;
+}
+
+#click{
+    display: none;
+}
+.myicon-1{
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.dash{
+    width: 18%;
+    height: 90vh;
+    background-color:  rgba(128, 139,150, .8);
+    position: fixed;
+    /* z-index: 1; */
+    top: 10vh;
+    left: 1%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px 5px gray;
+
+}
+.dash .menu{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    top: 10%;
+}
+.dash .menu .menu_1{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-top: 5%;
+}
+.dash .menu .menu_1:hover{
+    background-color: rgba(191, 201, 202, .1);
+    border-radius: 20px;
+} 
+
+.dash .menu .menu_1 li a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    right: 15%;
+}
+.dash .menu .menu_1 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_1 li a i{
+    position: relative;
+    right: 10%;
+}
+
+
+
+.dash .menu .menu_2{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    /* margin-top: 5%; */
+} 
+.dash .menu .menu_2:hover{
+    background-color: rgba(191, 201, 202, .1);
+    border-radius: 20px;
+}
+.dash .menu .menu_2 li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    right: 40%;
+}
+
+.dash .menu .menu_2 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_2 li a i{
+    position: relative;
+    right: 10%;
+}
+
+
+
+.dash .menu .menu_3{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    /* margin-top: 5%; */
+} 
+.dash .menu .menu_3:hover{
+    background-color: rgba(191, 201, 202, .1);
+    border-radius: 20px;
+}
+.dash .menu .menu_3 li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    right: 25%;
+}
+.dash .menu .menu_3 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_3 li a i{
+    position: relative;
+    right: 10%;
+}
+
+
+.dash .menu .menu_4{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    /* margin-top: 5%; */
+} 
+.dash .menu .menu_5{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-top: 5%;
+}
+.dash .menu .menu_5:hover{
+    background-color: rgba(191, 201, 202, .1);
+    border-radius: 20px;
+}
+.dash .menu .menu_4:hover{
+    background-color: rgba(191, 201, 202, .1);
+    border-radius: 20px;
+}
+.dash .menu .menu_4 li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    left:7%;
+}
+.dash .menu .menu_4 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_4 li a i{
+    position: relative;
+    right: 10%;
+}
+
+
+.dash .menu .menu_5 li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    right: 40%;
+}
+.dash .menu .menu_5 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_5 li a i{
+    position: relative;
+    right: 10%;
+}
+
+
+
+
+.dash .menu .menu_6{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 5%;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-top: 5%;
+}
+
+.dash .menu .menu_6 li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: x-large;
+    color: white;
+    position: relative;
+    right: 35%;
+}
+.dash .menu .menu_6 li a:hover{
+    color: black;
+    letter-spacing: 1px;
+}
+.dash .menu .menu_6 li a i{
+    position: relative;
+    right: 10%;
+}
+
+/****************************section css start*****************************************************  */
+.container{
+    width: 81%;
+    height: 20vh;
+    background-color: transparent;
+    position: relative;
+    /* z-index: 1; */
+    left: 19%;
+    top: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;    
+}
+.container .card{
+    width: 23%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 1px 1px  gray;
+}
+.container .card .money{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.container .card .money .m-1{
+    font-size: x-large;
+    padding: 20px 25px;
+    background: linear-gradient(rgb(37, 35, 35), rgb(30, 27, 27), rgb(56, 36, 36));
+    border-radius: 25%;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+}
+.container .card .money .myicon{
+    font-size: x-large;
+    padding: 20px 25px;
+    background-color: #DE3163;
+    border-radius: 25%;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+}
+
+.container .card .money .myicon_1{
+    font-size: x-large;
+    padding: 20px 25px;
+    background-color: #009c00;
+    border-radius: 25%;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+}
+
+.container .card .money .myicon_2{
+    font-size: x-large;
+    padding: 20px 25px;
+    background-color: #00399c;
+    border-radius: 25%;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+}
+.container .card .money .par .today{
+    font-size: large;
+    position: relative;
+    right: 8%;
+}
+.container .card .money .par .today-1{
+    font-size: large;
+    position: relative;
+    /* left: 50%; */
+    /* background-color: red; */
+}
+.container .card .money .par ins{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    /* left: 30%; */
+}
+.container .card .money .par ins{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    /* left: 30%; */
+}
+.container .card .week{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.container .card .week .i_1{
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    position: relative;
+    left: 5%;
+}
+.container .card .week .i_2{
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #DE3163;
+    position: relative;
+    left: 5%;
+}
+.container .card .week .para_1{
+    font-size: large;
+    /* color: black; */
+    opacity: .9;
+    position: relative;
+    left: 8%;
+
+}
+/****************************section css end*****************************************************  */
+/*********section sales start****************************************************/
+
+.sale{
+    width: 40%;
+    height: 50vh;
+    position: relative;
+    left: 21%;
+    top: 16vh;
+    
+}
+.sale .sl{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(251, 245, 245, .8);
+
+    
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.sale .sl .p{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: x-large;
+    font-weight: 600;
+}
+.sale .sl .sale-1{
+    width: 24%;
+    height: 70%;
+    border-left: 1px dashed black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+    background-color: transparent;
+}
+.sale .sl .sale-1 .sales{
+    width: 30%;
+    height: 40%;
+    position: relative;
+    top: 60%;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgba(0, 136, 163, 0.667);
+}
+.sale .sl .sale-1 .sales:hover{
+    background-color: rgba(19, 216, 255, 0.667);
+
+}
+.sale .sl .sale_1{
+    width: 24%;
+    height: 70%;
+    border-left: 1px dashed black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+}
+.sale .sl .sale_1 .sales{
+    width: 30%;
+    height: 50%;
+    position: relative;
+    cursor: pointer;
+    top: 50%;
+    border-radius: 20px;
+    background-color: rgba(6, 0, 88, 0.712);
+}
+.sale .sl .sale_1 .sales:hover{
+    background-color: rgba(50, 36, 255, 0.712);
+
+}
+.sale .sl .sale_2{
+    width: 24%;
+    height: 70%;
+    border-left: 1px dashed black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+    background-color: transparent;
+}
+.sale .sl .sale_2 .sales{
+    width: 30%;
+    height: 70%;
+    position: relative;
+    cursor: pointer;
+    top: 30%;
+    border-radius: 20px;
+    background-color: rgba(0, 136, 163, 0.667);
+}
+.sale .sl .sale_2 .sales:hover{
+    background-color: rgba(19, 216, 255, 0.667);
+
+}
+
+.sale .sl .sale_3{
+    width: 24%;
+    height: 70%;
+    border-left: 1px dashed black;
+    border-right: 1px dashed black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+    background-color: transparent;
+}
+.sale .sl .sale_3 .sales{
+    width: 30%;
+    height: 85%;
+    position: relative;
+    top: 15%;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgba(6, 0, 88, 0.712);
+}
+.sale .sl .sale_3 .sales:hover{
+    background-color: rgba(50, 36, 255, 0.712);
+
+}
+
+
+
+
+
+.sale .sl .sale-2{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    font-weight: 800;
+    bottom: 5%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .sale .sl .sale-2 .p2{
+    position: relative;
+    right: 20%;
+} */
+
+.transactions{
+    width: 20%;
+    height: 50vh;
+    /* background-color: white; */
+    position: absolute;
+    left: 65%;
+    bottom:14%;
+}
+.transactions .trans{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 245, 245, .5);
+    border-radius: 10px;
+}
+.transactions .trans .t{
+    width: 90%;
+    height: 10%;
+    font-size: xx-large;
+    margin-left: 5%;
+}
+.transactions .trans .twitter{
+    width: 90%;
+    height: 23%;
+    background-color: transparent;
+    position: relative;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.transactions .trans .twitter .icon{
+    width: 25%;
+    height: 90%;
+    border-radius: 50%;
+    position: relative;
+    left: 5%;
+    background-color: rgba(175, 175, 175, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transactions .trans .twitter .icon i{
+    font-size: x-large;
+    color: rgba(6, 0, 88, 0.712);
+}
+
+.transactions .trans .twitter .icon .you-1{
+    font-size: x-large;
+    color: rgb(139, 51, 0);
+}
+.transactions .trans .twitter .sub{
+    width: auto;
+
+}
+.transactions .trans .twitter .sub .s{
+    font-weight: 100;
+
+}
+.transactions .trans .twitter .sub .ins{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    font-weight: 700;
+}
+.transactions .trans button{
+    width: 90%;
+    height: 12%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(22, 21, 21, .9);
+}
+.transactions .trans button:hover{
+    background-color: rgba(22, 21, 21, .5);
+
+}
+.transactions .trans button .all{
+    font-size: large;
+    color: white;
+}
